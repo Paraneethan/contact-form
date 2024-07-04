@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Form Submission and Validation
     form.onsubmit = function (event) {
         event.preventDefault();
-
         document.querySelectorAll('.error').forEach(el => el.textContent = '');
 
         const name = document.getElementById('name').value;
@@ -83,6 +82,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
             form.reset();
+
         }
     }
 });
@@ -99,6 +99,16 @@ function hideButton() {
 }
 
 
+// button
+document.getElementById("contactBtn").addEventListener("click", function () {
+    this.style.display = "none";
+});
+
+
+
+
 
 
 document.getElementById('hideButton').addEventListener('click', hideButton);
+
+

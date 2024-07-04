@@ -108,7 +108,6 @@ document.getElementById("contactBtn").addEventListener("click", function () {
 
 
 
-
 document.getElementById('hideButton').addEventListener('click', hideButton);
 
 
